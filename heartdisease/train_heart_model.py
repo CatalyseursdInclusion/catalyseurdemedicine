@@ -18,6 +18,8 @@ from sklearn.ensemble import RandomForestClassifier
 # The "target" field refers to the presence of heart disease in the patient.  It is integer valued from 0
 # (no presence) to 4. Experiments with the Cleveland database have concentrated on simply attempting
 # to distinguish presence (values 1,2,3,4) from absence (value 0) -- from heart-disease.names
+# The 'uci_heart_mod_binary.csv' is slightly different as I combined 1, 2, 3, and 4 into just 1,
+# making it easier for the model.
 
 # read in the data to pandas dataframe
 df = pd.read_csv('uci_heart_mod_binary.csv')
